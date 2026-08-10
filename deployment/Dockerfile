@@ -1,0 +1,8 @@
+FROM
+
+WORKDIR
+
+EXPOSE "8080:8080"
+
+ENV
+

@@ -1,0 +1,14 @@
+services:
+  postgres:
+    container_name: currency-exchanger-postgres
+    image: postgres:18
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: currency-exchanger
+    ports:
+      - "8765:8765"
+    volumes:
+      -
+volumes:
+  
