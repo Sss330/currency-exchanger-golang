@@ -4,3 +4,5 @@ create table currency (
     full_name varchar,
     sign varchar
 )
+
+

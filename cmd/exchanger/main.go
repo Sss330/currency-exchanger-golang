@@ -10,6 +10,5 @@ func main() {
 
 	mux.HandleFunc("GET /health", handler.Check)
 
-	handler.Check(mux, ":8080")
-
+	http.ListenAndServe(":8086", mux)
 }
