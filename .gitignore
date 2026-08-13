@@ -1,0 +1,36 @@
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+
+# Go build and test artifacts
+bin/
+dist/
+coverage.out
+*.coverprofile
+*.exe
+*.test
+*.out
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
