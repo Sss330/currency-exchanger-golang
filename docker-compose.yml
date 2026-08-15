@@ -2,6 +2,7 @@ services:
   postgres:
     container_name: currency-exchanger-postgres
     image: postgres:18
+    restart: unless-stopped
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password

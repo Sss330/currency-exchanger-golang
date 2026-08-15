@@ -1,13 +1,13 @@
 -- +goose Up
 
-create table currencies
+create table if not exists currencies
 (
     id        int primary key generated always as identity,
     code      varchar unique not null,
-    full_name varchar not null,
+    full_name varchar        not null,
     sign      varchar
 );
 
--- +goouse Down
+-- +goose Down
 
-drop table currencies;
+drop table if exists currencies;

@@ -9,7 +9,6 @@ import (
 )
 
 func Open(ctx context.Context, dsn string) (*sql.DB, error) {
-
 	db, err := sql.Open("pgx", dsn)
 	if err != nil {
 		return nil, fmt.Errorf("open postgres: %w", err)
